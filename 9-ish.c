@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int arr[5] = {12, 45, 7, 89, 23};
+    int *p = arr;
+    int max = *p;
+
+    for (int i = 1; i < 5; i++) {
+        if (*(p + i) > max) {
+            max = *(p + i);
+        }
+    }
+
+    printf("Eng katta = %d", max);
+
+    return 0;
+}
